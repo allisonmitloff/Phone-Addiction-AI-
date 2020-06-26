@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('allison.csv')
+df = pd.read_csv('/Users/jenniferlin/Downloads/phone_test2.csv')
 unique_values = ['screen_time', 'social_networking', 'education', 'productivity', 'health', 'entertainment']
 df.columns = unique_values
 # resample the dataframe
@@ -12,4 +12,4 @@ print(len_df1)
 print(len_df2)
 df_resampled = pd.concat([df1,df2.sample(n=len_df1, replace=True)])
 # write the dataframe
-df_resampled.to_csv('filename.csv', index=False)
+df_resampled.to_csv('/Users/jenniferlin/Downloads/phone_addiction.csv', index=False)
